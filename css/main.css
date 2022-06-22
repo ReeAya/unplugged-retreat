@@ -15,6 +15,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 html {
     color: #222;
     font-size: 1em;
@@ -111,13 +112,41 @@ footer {
 
 /*HEADER STYLES*/
 
-header {}
+header {
+    padding: 15px 0;
+}
 
-header .content-wrapper {}
+header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+header .divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
+}
 
 header nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    width: 60%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header nav li {
+    list-style: none;
+    text-decoration: none;
     align-items: center;
 }
 
@@ -127,18 +156,49 @@ header nav {
 
 /*---------------------MAIN-------------*/
 
-.hero-area {}
+.hero-area {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
 
 .hero-area .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
+}
+
+aside .content-wrapper,
+.form,
+.hero-area h1 {
+    width: 85%;
 }
 
 aside {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
+    padding: 0px 10px;
+}
+
+aside .form #email {
+    width: 90%;
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+
+aside .form #button {
+    width: 93%;
+    margin-left: 0px;
+    padding: 8px 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 .features .content-wrapper {
@@ -146,6 +206,31 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    width: 88%;
+}
+
+.features .content-wrapper h2 {
+    margin-bottom: 60px;
+}
+
+.features p {
+    margin: 0;
+    padding: 15px;
+}
+
+
+/*47%*/
+
+.features article {
+    width: 60%;
+    margin: 30px 0;
+}
+
+.features .features-item-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .reviews .content-wrapper {
@@ -155,21 +240,45 @@ aside {
     flex-flow: column wrap;
 }
 
+.reviews {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.reviews h2 {
+    margin-bottom: 40px;
+}
+
+.reviews h3 {
+    width: 55%;
+    margin: 20px 0;
+}
+
+.reviews p {
+    width: 60%;
+    padding: 15px;
+}
+
 
 /*---------------------ABOUT PAGE-------------------*/
 
-.mission .mission-content {
+.mission {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .contact .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
+    margin: 0;
 }
 
 
@@ -184,6 +293,44 @@ aside {
 
 
 /*---------------FOOTER STYLES------------------*/
+
+footer {
+    flex-direction: column;
+}
+
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+footer .contact {
+    margin-bottom: 50px;
+}
+
+footer .social-icons p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contact h4 {
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.copyright {
+    margin: 20px 0;
+}
 
 
 /* ==========================================================================
