@@ -93,6 +93,11 @@ textarea {
     resize: vertical;
 }
 
+.content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+}
+
 
 /* ==========================================================================
    Author's custom styles
@@ -124,7 +129,7 @@ header .content-wrapper {
     margin: 0;
 }
 
-header .divider {
+.header-divider {
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
@@ -247,11 +252,6 @@ aside {
     margin: 20px 0;
 }
 
-.reviews p {
-    width: 60%;
-    padding: 15px;
-}
-
 
 /*---------------------ABOUT PAGE-------------------*/
 
@@ -260,6 +260,17 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.general-info p {
+    margin: 0;
 }
 
 
@@ -286,11 +297,6 @@ aside {
 
 .faq-content {
     margin-bottom: 50px;
-}
-
-.content-wrapper {
-    width: 90%;
-    margin: 50px 0;
 }
 
 
@@ -391,7 +397,7 @@ aside {
 
 /*-----------------TABLET STYLES HERE-------------*/
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 768px) {
     .content-wrapper {
         max-width: 640px;
         margin: 100px 0;
@@ -481,6 +487,15 @@ aside {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+    }
+    .faq .content-wrapper {
+        justify-content: space-between;
+    }
+    .faq-content {
+        flex-basis: 45%;
+    }
+    .faq h2 {
+        width: 100%;
     }
 }
 
